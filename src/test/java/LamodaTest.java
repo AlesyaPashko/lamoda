@@ -1,5 +1,4 @@
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.example.models.UserData;
 import org.example.utils.JsonReader;
@@ -14,7 +13,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class WildberriesTest extends BaseTest  {
+public class LamodaTest extends BaseTest  {
 
     @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
     public void searchTest(UserData userData) {
