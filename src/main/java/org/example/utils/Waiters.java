@@ -1,16 +1,12 @@
 package org.example.utils;
 
-import lombok.extern.log4j.Log4j2;
-
-@Log4j2
 public class Waiters {
 
     public static void waiter() {
-        log.info("Sleep");
         try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
         }
     }
 }
