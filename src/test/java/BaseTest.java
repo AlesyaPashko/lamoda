@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import io.qameta.allure.selenide.LogType;
@@ -18,6 +19,7 @@ public class BaseTest {
 
     static ResourceBundle bundle = ResourceBundle.getBundle("test_framework");
     private final String URL = bundle.getString("path_to_url");
+
     @BeforeClass
     public void start() {
         SelenideLogger.addListener("allure", new AllureSelenide()
@@ -37,6 +39,6 @@ public class BaseTest {
     @AfterMethod
     public void clearData() {
         clearBrowserLocalStorage();
-        clearBrowserCookies();
+        Selenide.clearBrowserCookies();
     }
 }

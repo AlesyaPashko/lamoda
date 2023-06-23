@@ -1,11 +1,14 @@
 [
   {
-    "searchRequest": "свитшот"
+    "positiveSearchRequest": "свитшот",
+    "negativeSearchRequest": "форсунка"
   },
   {
-    "searchRequest": "рубашка"
+    "positiveSearchRequest": "рубашка",
+    "negativeSearchRequest": "кроказябра"
   },
   {
-    "searchRequest": "футболка"
+    "positiveSearchRequest": "футболка",
+    "negativeSearchRequest": "распредвал"
   }
 ]

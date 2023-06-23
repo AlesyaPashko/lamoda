@@ -5,7 +5,8 @@
         <classes>
             <class name="SearchTest">
                 <methods>
-                    <include name="searchTest"/>
+                    <include name="positiveSearchTest"/>
+                    <include name="negativeSearchTest"/>
                 </methods>
             </class>
             <class name="SortingTest">
