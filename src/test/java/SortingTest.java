@@ -1,4 +1,4 @@
-import com.google.gson.stream.JsonReader;
+import org.example.utils.JsonReader;
 import org.example.models.UserData;
 import org.example.steps.SearchSteps;
 import org.example.steps.SortingSteps;
