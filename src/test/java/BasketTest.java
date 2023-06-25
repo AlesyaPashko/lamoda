@@ -1,5 +1,5 @@
 import io.qameta.allure.Description;
-import org.example.models.UserData;
+import org.example.models.BasketCriteriasData;
 import org.example.steps.BasketSteps;
 import org.example.steps.SearchSteps;
 import org.example.steps.SortingSteps;
@@ -11,21 +11,12 @@ public class BasketTest extends BaseTest {
     SortingSteps sortingSteps = new SortingSteps();
     BasketSteps basketSteps = new BasketSteps();
 
-    @Description("Check the correct list of products in the basket")
-    @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
-    public void basketTestByName(UserData userData) {
-        searchSteps.searchProduct(userData.getPositiveSearchRequest());
+    @Description("Check the correct list of products in the basket by criteria")
+    @Test(dataProvider = "basketCriterias", dataProviderClass = JsonReader.class)
+    public void basketTestByName(BasketCriteriasData basketCriteriasData) {
+        searchSteps.searchProduct(basketCriteriasData.getUserData().getPositiveSearchRequest());
         sortingSteps.customizeSortingByAscendingPrice();
         basketSteps.chooseCheapestProduct();
-        basketSteps.checkBasketByCriteria(basketSteps.getProductName());
-    }
-
-    @Description("Check the correct total price in the basket")
-    @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
-    public void basketTestByPrice(UserData userData) {
-        searchSteps.searchProduct(userData.getPositiveSearchRequest());
-        sortingSteps.customizeSortingByAscendingPrice();
-        basketSteps.chooseCheapestProduct();
-        basketSteps.checkBasketByCriteria(basketSteps.getProductPrice());
+        basketSteps.checkBasketByCriteria(basketCriteriasData.getCriteria());
     }
 }

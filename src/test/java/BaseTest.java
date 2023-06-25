@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import static com.codeborne.selenide.Browsers.CHROME;
 import static com.codeborne.selenide.Selenide.clearBrowserLocalStorage;
 import static com.codeborne.selenide.Selenide.open;
-import static org.openqa.selenium.devtools.v85.network.Network.clearBrowserCookies;
+
 
 public class BaseTest {
 

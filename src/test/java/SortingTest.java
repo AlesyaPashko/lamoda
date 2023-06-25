@@ -1,8 +1,8 @@
 import io.qameta.allure.Description;
-import org.example.utils.JsonReader;
 import org.example.models.UserData;
 import org.example.steps.SearchSteps;
 import org.example.steps.SortingSteps;
+import org.example.utils.JsonReader;
 import org.testng.annotations.Test;
 
 public class SortingTest extends BaseTest {

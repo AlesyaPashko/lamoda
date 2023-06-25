@@ -22,22 +22,20 @@ public class BasketSteps {
         }
     }
 
-    @Step("Get product name")
-    public String getProductName() {
+    public String getProductCharacteristicByCriteria(String criteria) {
+        if (criteria.equals("price")) {
+            return basketPage.productPrice.getText();
+        }
         return basketPage.productName.getText();
-    }
-
-    @Step("Get product price")
-    public String getProductPrice() {
-        return basketPage.productPrice.getText();
     }
 
     @Step("Check basket by criteria")
     public void checkBasketByCriteria(String criteria) {
+        String readProductCriteria = getProductCharacteristicByCriteria(criteria);
         basketPage.putInBasketButton.click();
         basketPage.openBasketButton.click();
         basketPage.productListInBasket
-                .filter(Condition.text(criteria))
+                .filter(Condition.text(readProductCriteria))
                 .shouldHave(CollectionCondition.sizeGreaterThan(0));
     }
 }

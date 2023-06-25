@@ -18,7 +18,6 @@
             <class name="BasketTest">
                 <methods>
                     <include name="basketTestByName"/>
-                    <include name="basketTestByPrice"/>
                 </methods>
             </class>
         </classes>
