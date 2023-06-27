@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserData {
-    String positiveSearchRequest;
-    String negativeSearchRequest;
+public class BasketCriteriasData {
+
+    UserData userData;
+    String criteria;
 }

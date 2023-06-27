@@ -1,0 +1,44 @@
+[
+  {
+    "userData": {
+      "positiveSearchRequest": "свитшот",
+      "negativeSearchRequest": "форсунка"
+    },
+    "criteria": "price"
+  },
+  {
+    "userData": {
+      "positiveSearchRequest": "рубашка",
+      "negativeSearchRequest": "кроказябра"
+    },
+    "criteria": "price"
+  },
+  {
+    "userData": {
+      "positiveSearchRequest": "футболка",
+      "negativeSearchRequest": "распредвал"
+    },
+    "criteria": "price"
+  },
+  {
+    "userData": {
+      "positiveSearchRequest": "свитшот",
+      "negativeSearchRequest": "форсунка"
+    },
+    "criteria": "name"
+  },
+  {
+    "userData": {
+      "positiveSearchRequest": "рубашка",
+      "negativeSearchRequest": "кроказябра"
+    },
+    "criteria": "name"
+  },
+  {
+    "userData": {
+      "positiveSearchRequest": "футболка",
+      "negativeSearchRequest": "распредвал"
+    },
+    "criteria": "name"
+  }
+]
