@@ -30,7 +30,7 @@ public class JsonReader {
         File file = new File(filePath);
 
         try (FileInputStream fis = new FileInputStream(file)) {
-            return objectMapper.readValue(fis, new TypeReference<List<UserData>>() {
+            return objectMapper.readValue(fis, new TypeReference<>() {
             });
         }
     }
@@ -53,7 +53,7 @@ public class JsonReader {
         File file = new File(filePath);
 
         try (FileInputStream fis = new FileInputStream(file)) {
-            return objectMapper.readValue(fis, new TypeReference<List<BasketCriteriasData>>() {
+            return objectMapper.readValue(fis, new TypeReference<>() {
             });
         }
     }

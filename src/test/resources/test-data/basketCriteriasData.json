@@ -2,42 +2,48 @@
   {
     "userData": {
       "positiveSearchRequest": "свитшот",
-      "negativeSearchRequest": "форсунка"
+      "negativeSearchRequest": "форсунка",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "price"
   },
   {
     "userData": {
-      "positiveSearchRequest": "рубашка",
-      "negativeSearchRequest": "кроказябра"
+      "positiveSearchRequest": "рУбАшКа",
+      "negativeSearchRequest": "рубашка11",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "price"
   },
   {
     "userData": {
-      "positiveSearchRequest": "футболка",
-      "negativeSearchRequest": "распредвал"
+      "positiveSearchRequest": "футбока",
+      "negativeSearchRequest": "footballka",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "price"
   },
   {
     "userData": {
       "positiveSearchRequest": "свитшот",
-      "negativeSearchRequest": "форсунка"
+      "negativeSearchRequest": "форсунка",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "name"
   },
   {
     "userData": {
-      "positiveSearchRequest": "рубашка",
-      "negativeSearchRequest": "кроказябра"
+      "positiveSearchRequest": "рУбАшКа",
+      "negativeSearchRequest": "рубашка11",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "name"
   },
   {
     "userData": {
-      "positiveSearchRequest": "футболка",
-      "negativeSearchRequest": "распредвал"
+      "positiveSearchRequest": "футбока",
+      "negativeSearchRequest": "footballka",
+      "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
     },
     "criteria": "name"
   }

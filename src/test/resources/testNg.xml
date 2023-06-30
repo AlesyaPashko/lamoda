@@ -1,7 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="MainTest">
 
-    <test name="MainTest" parallel="false">
+<suite name="MainTest" parallel="tests" thread-count="2">
+
+    <test name="Chrome test">
+
+        <parameter name="startType" value="selenoid"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="114"/>
+
         <classes>
             <class name="SearchTest">
                 <methods>
@@ -17,7 +23,34 @@
             </class>
             <class name="BasketTest">
                 <methods>
-                    <include name="basketTestByName"/>
+                    <include name="basketTestByCriteria"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Firefox test">
+
+        <parameter name="startType" value="selenoid"/>
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="114"/>
+
+        <classes>
+            <class name="SearchTest">
+                <methods>
+                    <include name="positiveSearchTest"/>
+                    <include name="negativeSearchTest"/>
+                </methods>
+            </class>
+            <class name="SortingTest">
+                <methods>
+                    <include name="sortingByAscendingPriceTest"/>
+                    <include name="sortingByDescendingPriceTest"/>
+                </methods>
+            </class>
+            <class name="BasketTest">
+                <methods>
+                    <include name="basketTestByCriteria"/>
                 </methods>
             </class>
         </classes>

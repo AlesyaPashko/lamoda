@@ -11,9 +11,10 @@ public class BasketTest extends BaseTest {
     SortingSteps sortingSteps = new SortingSteps();
     BasketSteps basketSteps = new BasketSteps();
 
+    // имена!!!
     @Description("Check the correct list of products in the basket by criteria")
     @Test(dataProvider = "basketCriterias", dataProviderClass = JsonReader.class)
-    public void basketTestByName(BasketCriteriasData basketCriteriasData) {
+    public void basketTestByCriteria(BasketCriteriasData basketCriteriasData) {
         searchSteps.searchProduct(basketCriteriasData.getUserData().getPositiveSearchRequest());
         sortingSteps.customizeSortingByAscendingPrice();
         basketSteps.chooseCheapestProduct();

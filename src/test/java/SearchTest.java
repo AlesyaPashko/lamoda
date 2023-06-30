@@ -11,13 +11,14 @@ public class SearchTest extends BaseTest {
     @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
     public void positiveSearchTest(UserData userData) {
         searchSteps.searchProduct(userData.getPositiveSearchRequest());
-        searchSteps.checkSearchResult();
+        searchSteps.checkPositiveSearchResult();
     }
 
+    // имя теста?!
     @Description("Check the correct work search with wrong request")
     @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
     public void negativeSearchTest(UserData userData) {
         searchSteps.searchProduct(userData.getNegativeSearchRequest());
-        searchSteps.checkNegativeSearchResult();
+        searchSteps.checkNegativeSearchResult(userData.getWarningText());
     }
 }
