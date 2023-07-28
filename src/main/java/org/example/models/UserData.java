@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class UserData {
     String positiveSearchRequest;
     String negativeSearchRequest;
+    String warningText;
 }

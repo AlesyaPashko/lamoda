@@ -1,14 +1,17 @@
 [
   {
     "positiveSearchRequest": "свитшот",
-    "negativeSearchRequest": "форсунка"
+    "negativeSearchRequest": "форсунка",
+    "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
   },
   {
-    "positiveSearchRequest": "рубашка",
-    "negativeSearchRequest": "кроказябра"
+    "positiveSearchRequest": "рУбАшКа",
+    "negativeSearchRequest": "рубашка11",
+    "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
   },
   {
-    "positiveSearchRequest": "футболка",
-    "negativeSearchRequest": "распредвал"
+    "positiveSearchRequest": "футбока",
+    "negativeSearchRequest": "footballka",
+    "warningText": "Измените поисковый запрос или посмотрите наши рекомендации."
   }
 ]

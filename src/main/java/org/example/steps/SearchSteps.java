@@ -16,13 +16,13 @@ public class SearchSteps {
     }
 
     @Step("Check search result")
-    public void checkSearchResult() {
+    public void checkPositiveSearchResult() {
         searchPage.searchResult.shouldBe(Condition.visible);
     }
 
-    @Step("Check negativ search result")
-    public void checkNegativeSearchResult() {
+    @Step("Check negative search result")
+    public void checkNegativeSearchResult(String warningText) {
         Waiters.sleep();
-        searchPage.searchResult.shouldNotBe(Condition.visible);
+        searchPage.warningText.shouldHave(Condition.text(warningText));
     }
 }
