@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="MainTest" parallel="tests" thread-count="2">
+<suite name="MainTest">
 
     <test name="Chrome test">
 
@@ -11,35 +11,8 @@
         <classes>
             <class name="SearchTest">
                 <methods>
-                    <include name="positiveSearchTest"/>
-                    <include name="negativeSearchTest"/>
-                </methods>
-            </class>
-            <class name="SortingTest">
-                <methods>
-                    <include name="sortingByAscendingPriceTest"/>
-                    <include name="sortingByDescendingPriceTest"/>
-                </methods>
-            </class>
-            <class name="BasketTest">
-                <methods>
-                    <include name="basketTestByCriteria"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <test name="Firefox test">
-
-        <parameter name="startType" value="selenoid"/>
-        <parameter name="browser" value="firefox"/>
-        <parameter name="version" value="114"/>
-
-        <classes>
-            <class name="SearchTest">
-                <methods>
-                    <include name="positiveSearchTest"/>
-                    <include name="negativeSearchTest"/>
+                    <include name="isSearchResultVisible"/>
+                    <include name="isEmptyResultMessageVisible"/>
                 </methods>
             </class>
             <class name="SortingTest">

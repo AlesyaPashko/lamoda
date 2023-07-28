@@ -14,6 +14,7 @@ public class PriceConverter {
 
     public static List<Double> getOriginPricesList(ElementsCollection priceList) {
         log.info("Get double prices list");
+        Waiters.sleep();
         List<Double> priceListOriginal = new ArrayList<Double>();
 
         for (SelenideElement productPrice : priceList) {

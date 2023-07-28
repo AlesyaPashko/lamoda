@@ -9,16 +9,15 @@ public class SearchTest extends BaseTest {
 
     @Description("Check the correct work search with normal request")
     @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
-    public void positiveSearchTest(UserData userData) {
+    public void isSearchResultVisible(UserData userData) {
         searchSteps.searchProduct(userData.getPositiveSearchRequest());
-        searchSteps.checkPositiveSearchResult();
+        searchSteps.isSearchResultVisible();
     }
 
-    // имя теста?!
     @Description("Check the correct work search with wrong request")
     @Test(dataProvider = "userData", dataProviderClass = JsonReader.class)
-    public void negativeSearchTest(UserData userData) {
+    public void isEmptyResultMessageVisible(UserData userData) {
         searchSteps.searchProduct(userData.getNegativeSearchRequest());
-        searchSteps.checkNegativeSearchResult(userData.getWarningText());
+        searchSteps.isEmptyResultMessageVisible(userData.getWarningText());
     }
 }
