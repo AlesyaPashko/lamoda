@@ -11,7 +11,6 @@ public class BasketTest extends BaseTest {
     SortingSteps sortingSteps = new SortingSteps();
     BasketSteps basketSteps = new BasketSteps();
 
-    // имена!!!
     @Description("Check the correct list of products in the basket by criteria")
     @Test(dataProvider = "basketCriterias", dataProviderClass = JsonReader.class)
     public void basketTestByCriteria(BasketCriteriasData basketCriteriasData) {

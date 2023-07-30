@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="MainTest">
+<suite name="MainTest" parallel="false">
 
     <test name="Chrome test">
 
