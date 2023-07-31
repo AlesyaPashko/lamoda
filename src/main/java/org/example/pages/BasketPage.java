@@ -12,8 +12,8 @@ public class BasketPage {
     public ElementsCollection productButtons = $$(By.xpath("//a[contains(@class,\"rd_\")]"));
     public SelenideElement putInBasketButton = $(withText("корзину"));
     public ElementsCollection sizeList = $$(By.xpath("//div[contains(@class,\"_root_xc5u8_2\")]"));
-    public ElementsCollection sizeListScroll = $$(By.xpath("//div[contains(@class,\"_select_\")]"));
-    public ElementsCollection sizeButtons = $$(By.xpath("//div[contains(@class,\"_colspanMain_\")]"));
+    public ElementsCollection sizeListScroll = $$(By.xpath("//div[contains(@class,\"_select_1w\")]"));
+    public ElementsCollection sizeButtons = $$(By.xpath("//div[contains(@class,\"0 u\")]/div[contains(@class,\"_colspanMain_\")]"));
     public SelenideElement productName = $(By.xpath("//div[contains(@class,'_modelName')]"));
     public ElementsCollection productListInBasket = $$(By.xpath("//div[@class=\"_category_1uvko_64\"]"));
     public SelenideElement productPrice = $(By.xpath("//span[@aria-label=\"Итоговая цена\"]"));

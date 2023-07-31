@@ -5,6 +5,7 @@ import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
 import org.example.pages.BasketPage;
+import org.example.utils.Waiters;
 
 @Log4j2
 public class BasketSteps {
@@ -14,6 +15,7 @@ public class BasketSteps {
     public void chooseCheapestProduct() {
         log.info("Choose cheapest product");
         basketPage.productButtons.get(0).click();
+        Waiters.sleep();
         if (basketPage.sizeList.size() > 0) {
             basketPage.sizeList.get(0).click();
         } else if (basketPage.sizeListScroll.size() > 0) {
