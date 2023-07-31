@@ -9,18 +9,18 @@
         <parameter name="version" value="114"/>
 
         <classes>
-            <!--            <class name="SearchTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="isSearchResultVisible"/>-->
-            <!--                    <include name="isEmptyResultMessageVisible"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
-            <!--            <class name="SortingTest">-->
-            <!--                <methods>-->
-            <!--                    <include name="sortingByAscendingPriceTest"/>-->
-            <!--                    <include name="sortingByDescendingPriceTest"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+            <class name="SearchTest">
+                <methods>
+                    <include name="isSearchResultVisible"/>
+                    <include name="isEmptyResultMessageVisible"/>
+                </methods>
+            </class>
+            <class name="SortingTest">
+                <methods>
+                    <include name="sortingByAscendingPriceTest"/>
+                    <include name="sortingByDescendingPriceTest"/>
+                </methods>
+            </class>
             <class name="BasketTest">
                 <methods>
                     <include name="basketTestByCriteria"/>
